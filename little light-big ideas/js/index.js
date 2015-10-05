@@ -1,4 +1,7 @@
-function randomQuote() {
+var dark = false;
+
+function randomQuote() 
+{
  $.ajax({
       url: "http://api.forismatic.com/api/1.0/",
       jsonp: "jsonp",
@@ -15,18 +18,41 @@ function randomQuote() {
     });
 }
 
+ function shift() 
+ {
+  if(dark ==true){
+
+      $(".chain").toggleClass("chain-pull");
+      //$(".chain").css
+      $("body").css("background-color","black");
+      dark==false;
+     }
+
+     else{
+      $(".chain").toggleClass("chain-pull");
+      $("body").css("background-color","#c3783f");
+      dark==true;
+     }
+}
+
 randomQuote();
+
 
 //Click on the button to generate another random quote
 
-$('#random').click(function() {
-  
+$('#random').click(function() {  
     randomQuote();
-  })
-
-$(function(){
-  $("#random").click(function(){
-      $(".chain").toggleClass("chain-pull");
+    console.log;
+    dark = !dark;
+    shift();
+    console.log(dark);
   });
-});
 
+
+/*$(function(){
+  $("#random").click(function()
+  {
+ 
+
+  });
+});*/

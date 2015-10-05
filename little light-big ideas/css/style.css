@@ -1,7 +1,17 @@
 body {
 font-family: 'Fauna One', serif;
-background-color: #413d3e;
+background-color: #c3783f;
 color: #e5ddcc;
+}
+
+#wrapper{
+  box-shadow: inset auto 0 90px black;
+  overflow: auto;
+}
+
+
+#body-on{
+  background-color: #f28e2e;
 }
 
 button {
@@ -54,7 +64,7 @@ h1 {
 }
 
 .lightbulb {
-  margin-bottom: 150px;  
+  margin-bottom: 80px;  
 }
 
 .freepik {
@@ -76,12 +86,6 @@ a:active {
 }
 
 .chain{
-  width: 60px;
-  height: 60px;
-  background: red;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
   margin-left: 60%;
 
 }
