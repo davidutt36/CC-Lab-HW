@@ -24,17 +24,18 @@ function randomQuote()
 
       $(".chain").toggleClass("chain-pull");
       //$(".chain").css
-      $("body").css("background-color","black");
+      $("body").css("background-color","#2A2D30");
+      $(".lightbulb").css("box-shadow","0px 500px 400px 100px #EDDF92");
       dark==false;
      }
 
      else{
       $(".chain").toggleClass("chain-pull");
       $("body").css("background-color","#c3783f");
+      $(".lightbulb").css("box-shadow","0px 500px 400px 100px #c3783f");
       dark==true;
      }
 }
-
 randomQuote();
 
 
