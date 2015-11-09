@@ -22,7 +22,9 @@ public:
     void gotMessage(ofMessage msg);
     
     particleMode currentMode;
+    
     string currentModeStr;
+    string intro;
     
     vector <demoParticle> p;
     vector <ofPoint> attractPoints;

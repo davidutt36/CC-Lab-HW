@@ -9,6 +9,7 @@ void ofApp::setup(){
     currentMode = PARTICLE_MODE_ATTRACT;
     
     currentModeStr = "1 - PARTICLE_MODE_ATTRACT: attracts to mouse";
+   
     
     resetParticles();
 }
@@ -64,7 +65,7 @@ void ofApp::draw(){
     }
     
     ofSetColor(230);
-    ofDrawBitmapString(currentModeStr + "\n\nSpacebar to reset. \nKeys 1-4 to change mode.", 10, 20);
+    ofDrawBitmapString(currentModeStr + "\n\nSpacebar to reset. \nKeys 1-4 to change Particles. \nKeys 6-9 to change Blend Mode", 10, 20);
     
     //ofEnableBlendMode(OF_BLENDMODE_ALPHA);
     ofEnableBlendMode(blendMode);
@@ -101,7 +102,7 @@ void ofApp::keyPressed(int key){
             break;
         case 55:
             blendMode = OF_BLENDMODE_ADD;
-            opa
+            
             break;
         case 56:
             blendMode = OF_BLENDMODE_MULTIPLY;
